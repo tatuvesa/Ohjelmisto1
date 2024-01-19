@@ -1,6 +1,3 @@
-import math
-import random
-
 # 3.1 kuha
 kuha = float(input("Kerro kuhasi pituus: "))
 
