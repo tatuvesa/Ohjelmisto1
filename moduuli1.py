@@ -29,9 +29,9 @@ print("suorakulmion pinta-ala on: ", pinta_ala)
 # tehtävä 2 kolme kokonaislukua________________________________________________________
 
 print("\nSyötä kolme kokonaislukua.")
-luku1 = float(input("Syötä ensimmäinen luku: "))
-luku2 = float(input("Syötä toinen luku: "))
-luku3 = float(input("Syötä kolmas luku: "))
+luku1 = int(input("Syötä ensimmäinen luku: "))
+luku2 = int(input("Syötä toinen luku: "))
+luku3 = int(input("Syötä kolmas luku: "))
 
 summa = luku1 + luku2 + luku3
 tulo = luku1 * luku2 * luku3
@@ -49,12 +49,11 @@ luodit = float(input("Syötä luodit: "))
 
 grammat = (leiviska * 20 * 32 + naulat * 32 + luodit) * 13.3
 
-kg = int(grammat / 1000)
-grammat = grammat % 1000
-print("\nMassa on", kg, " kilogrammaa ja ", round(grammat,2), " grammaa.")
+#kg = int(grammat / 1000)
+#grammat = grammat % 1000
+#print("\nMassa on", kg, " kilogrammaa ja ", round(grammat,2), " grammaa.")
 
-# toinen ratkaisu jota en osaa pyöristää :/
-# print(f"Massa on {grammat // 1000} kilogrammaa ja {grammat % 1000} grammaa.")
+print(f"Massa on {grammat // 1000} kilogrammaa ja {grammat % 1000:.2f} grammaa.")
 
 #tehtävä 2 kohta 6, 3 numeroa ja 4 numeroa_________________________________________________
 
