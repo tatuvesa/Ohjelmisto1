@@ -3,6 +3,8 @@ kuha = float(input("Kerro kuhasi pituus: "))
 
 if kuha < 37:
     print(f"Heitä kuha takaisin järveen! Kuhan pitää olla {37 - kuha:.1f} cm pidempi!\n")
+else:
+    print("Hieno kala!")
 
 # 3.2 laivan hyttiluokka
 
@@ -22,7 +24,8 @@ else:
 # 3.3 Biologinen sukupuoli
 
 sukupuoli = str.lower(input("Mikä on biologinen sukupuolesi mies/nainen: "))
-hemoglobiini = float(input("Mikä on hemoglobiini arvosi?: "))
+if sukupuoli == "mies" or sukupuoli == "nainen":
+    hemoglobiini = float(input("Mikä on hemoglobiini arvosi?: "))
 
 if sukupuoli == "nainen":
     if hemoglobiini < 117:
