@@ -1,15 +1,16 @@
-import math
-import random
+oikeakayttajatunnus = "python"
+oikeasalasana = "rules"
+yritykset = 0
 
-tunnus = ("python")
-salasana = ("rules")
-kayttajatunnus = input("Käyttäjätunnus: ")
-syottosalasana = input("Syottosalasana: ")
-arvaukset = 0
+while yritykset < 5:
+    kayttajatunnus = input("Syötä käyttäjätunnus: ")
+    salasana = input("Syötä salasana: ")
 
-while kayttajatunnus != "python" or syottosalasana != "rules":
-    print("Väärä käyttäjätunnus tai salasana.")
-    kayttajatunnus = input("Käyttäjätunnus: ")
-    syottosalasana = input("Salasana: ")
+    if kayttajatunnus == oikeakayttajatunnus and salasana == oikeasalasana:
+        print("Tervetuloa!")
+        break
+    elif kayttajatunnus != oikeakayttajatunnus or salasana != oikeasalasana:
+        yritykset += 1
 
-
+if yritykset == 5:
+    print("Pääsy evätty.")
