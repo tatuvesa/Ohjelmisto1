@@ -12,7 +12,7 @@ while True:
         if icao in lentoasemat:
             print(f"Lentoaseman nimi: {lentoasemat[icao]}")
         else:
-            print(f"Lentoasemaa ei löytynyt.")
+            print("Lentoasemaa ei löytynyt.")
 
     elif valinta == "3":
         break
