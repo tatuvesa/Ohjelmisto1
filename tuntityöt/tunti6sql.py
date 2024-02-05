@@ -1,7 +1,8 @@
 import mysql.connector
 
 def haekentta(nimi):
-    sql = "select name, ident from airport where name like '%" + nimi + "%'"
+    sql = "select name, ident from airport where name like '%" + nimi + "%';"
+    print(sql)
     kursori = mydb.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()
