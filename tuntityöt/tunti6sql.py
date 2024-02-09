@@ -24,9 +24,9 @@ mydb = mysql.connector.connect(
        autocommit=True
        )
 while True:
-    print("1: kentän suppeat tiedot.")
-    print("2: kentän laajat tiedot.")
-    print("Jätä kenttä tyhjäksi poistuaksesi.")
+    print("1: kentän suppeat tiedot.\n"
+          "2: kentän laajat tiedot.\n"
+          "Jätä kenttä tyhjäksi poistuaksesi.")
 
     kentanNimi = input("Anna kentän nimi: ")
     valinta = input("Valitse 1 tai 2: ")
